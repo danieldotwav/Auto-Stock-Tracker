@@ -45,5 +45,5 @@ We encourage you to contribute to Auto-Stock-Tracker! Please check out the [Cont
 
 ## Contact
 
-[https://github.com/danieldotwav/Auto-Stock-Tracker/](https://github.com/danieldotwav/Auto-Stock-Tracker/)]
+[https://github.com/danieldotwav/Auto-Stock-Tracker/](https://github.com/danieldotwav/Auto-Stock-Tracker/)
 
