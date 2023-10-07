@@ -666,11 +666,12 @@ Vehicle ID     Model              Quantity       Price
 Total Records: 0
 ------------------------------------------------------
 
-Menu:
+Main Menu:
 Please select one of the following options:
-1. Print all valid items in the inventory (unsorted)
-2. Print invalid records
-3. Quit program
+1. Valid Records
+2. Invalid Records
+3. Sort Inventory
+4. Quit program
 Selection: 2
 
 INVALID RECORDS
@@ -684,25 +685,27 @@ KL670M123      Accord3                   6        3500 Invalid Price: [ Price mu
 Total Records: 3
 ------------------------------------------------------
 
-Menu:
+Main Menu:
 Please select one of the following options:
-1. Print all valid items in the inventory (unsorted)
-2. Print invalid records
-3. Quit program
+1. Valid Records
+2. Invalid Records
+3. Sort Inventory
+4. Quit program
 Selection: 3
 
 Terminating Program
 
 
-*****Test Case #4: The data file contains only valid records*****
-Menu:
+*****Test Case #5: The data file contains only valid records*****
+Main Menu:
 Please select one of the following options:
-1. Print all valid items in the inventory (unsorted)
-2. Print invalid records
-3. Quit program
+1. Valid Records
+2. Invalid Records
+3. Sort Inventory
+4. Quit program
 Selection: 1
 
-VALID ITEMS IN THE INVENTORY (UNSORTED)
+VALID ITEMS IN THE INVENTORY
 ------------------------------------------------------
 Vehicle ID     Model              Quantity       Price
 
@@ -716,98 +719,103 @@ EF45AB678      LongModelName            10     5000.01
 Total Records: 6
 ------------------------------------------------------
 
-Menu:
-Please select one of the following options:
-1. Print all valid items in the inventory (unsorted)
-2. Print invalid records
-3. Quit program
-Selection: 2
 
-No Invalid Records Found.
+*****Test Case #6: Invalid Sort Menu Selection*****
 
-Menu:
-Please select one of the following options:
-1. Print all valid items in the inventory (unsorted)
-2. Print invalid records
-3. Quit program
+Sort Menu:
+Please select one of the following sorting options:
+1. ID
+2. Model
+3. Quantity
+4. Price
+5. Return to Main Menu
+Selection: asdf
+
+Error: Invalid menu selection
+
+Sort Menu:
+Please select one of the following sorting options:
+1. ID
+2. Model
+3. Quantity
+4. Price
+5. Return to Main Menu
+Selection: 1234
+
+Error: Invalid menu selection
+
+Sort Menu:
+Please select one of the following sorting options:
+1. ID
+2. Model
+3. Quantity
+4. Price
+5. Return to Main Menu
 Selection:
 
 
-*****Test Case #5: No matching vehicle records - Search by ID/Model*****
-
-Enter the Vehicle ID or Model Name: ab
-
-No records found matching the search criteria.
-
-Search Menu:
+*****Test Case #7: Only Invalid Records - Sort Menu*****
+Main Menu:
 Please select one of the following options:
-1. Search by ID/Model
-2. Search by Price (+-15%)
-3. Return to Main Menu
-4. Exit Program
-Selection:
+1. Valid Records
+2. Invalid Records
+3. Sort Inventory
+4. Quit program
+Selection: 3
 
+Sort Menu:
+Please select one of the following sorting options:
+1. ID
+2. Model
+3. Quantity
+4. Price
+5. Return to Main Menu
+Selection: 3
 
-*****Test Case #6: No matching vehicle records - Search by Price*****
+Sorting by Quantity
 
-Search Menu:
-Please select one of the following options:
-1. Search by ID/Model
-2. Search by Price (+-15%)
-3. Return to Main Menu
-4. Exit Program
-Selection: 2
-
-Enter the price to search for: $9999999999
-
-No records found matching the search criteria.
-
-Search Menu:
-Please select one of the following options:
-1. Search by ID/Model
-2. Search by Price (+-15%)
-3. Return to Main Menu
-4. Exit Program
-Selection:
-
-
-*****Test Case #7: Case sensitivity in Search by Model/ID*****
-*
-Search Menu:
-Please select one of the following options:
-1. Search by ID/Model
-2. Search by Price (+-15%)
-3. Return to Main Menu
-4. Exit Program
-Selection: 1
-
-Enter the Vehicle ID or Model Name: civic
-
-RECORDS CONTAINING 'CIVIC'
+VALID ITEMS IN THE INVENTORY
 ------------------------------------------------------
 Vehicle ID     Model              Quantity       Price
 
-GH23IJ457      CIVIC6                   10    14500.00
-GH23IJ458      CIVIC7                    8    15000.00
-GH23IJ456      CIVIC5                   18    13500.00
-HJ23IJ486      CIVIC8                    4    17700.00
 
-Total Records: 4
+Total Records: 0
 ------------------------------------------------------
 
 
-*****Test Case #8: Invalid input in search by price*****
-
-Search Menu:
+Main Menu:
 Please select one of the following options:
-1. Search by ID/Model
-2. Search by Price (+-15%)
-3. Return to Main Menu
-4. Exit Program
-Selection: 2
+1. Valid Records
+2. Invalid Records
+3. Sort Inventory
+4. Quit program
+Selection: 3
 
-Enter the price to search for: $asdf
+Sort Menu:
+Please select one of the following sorting options:
+1. ID
+2. Model
+3. Quantity
+4. Price
+5. Return to Main Menu
+Selection: 4
 
-ERROR: 'asdf' is not a valid Price
+Sorting by Price
 
+VALID ITEMS IN THE INVENTORY
+------------------------------------------------------
+Vehicle ID     Model              Quantity       Price
+
+
+Total Records: 0
+------------------------------------------------------
+
+
+Main Menu:
+Please select one of the following options:
+1. Valid Records
+2. Invalid Records
+3. Sort Inventory
+4. Quit program
+Selection:
 */
