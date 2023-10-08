@@ -318,27 +318,27 @@ void Inventory::SortBy(int field) {
 		int minIndex = i;
 
 		for (int j = i + 1; j < numCars; j++) {
-			bool condition = false;
+			bool isMinVal = false;
 
 			switch (field) {
 			case ID: // Sort by ID
-				condition = carPtrs[j]->getCarID() > carPtrs[minIndex]->getCarID();
+				isMinVal = carPtrs[j]->getCarID() > carPtrs[minIndex]->getCarID();
 				break;
 			case MODEL: // Sort by Model
-				condition = carPtrs[j]->getModel() > carPtrs[minIndex]->getModel();
+				isMinVal = carPtrs[j]->getModel() > carPtrs[minIndex]->getModel();
 				break;
 			case QUANTITY: // Sort by Quantity
-				condition = carPtrs[j]->getQuantity() > carPtrs[minIndex]->getQuantity();
+				isMinVal = carPtrs[j]->getQuantity() > carPtrs[minIndex]->getQuantity();
 				break;
 			case PRICE: // Sort by Price
-				condition = carPtrs[j]->getPrice() > carPtrs[minIndex]->getPrice();
+				isMinVal = carPtrs[j]->getPrice() > carPtrs[minIndex]->getPrice();
 				break;
 			default:
 				cout << "ERROR: Invalid field. Terminating Program\n";
 				exit(EXIT_FAILURE);
 			}
 
-			if (condition) {
+			if (isMinVal) {
 				minIndex = j;
 			}
 		}
@@ -614,13 +614,16 @@ Selection:
 
 *****Test Case #2: User inputs an invalid option in Sort Menu*****
 
-Main Menu:
-Please select one of the following options:
-1. Valid Records
-2. Invalid Records
-3. Sort Inventory
-4. Quit program
-Selection: 3
+Sort Menu:
+Please select one of the following sorting options:
+1. ID
+2. Model
+3. Quantity
+4. Price
+5. Return to Main Menu
+Selection: asdf
+
+Error: Invalid menu selection
 
 Sort Menu:
 Please select one of the following sorting options:
@@ -629,9 +632,9 @@ Please select one of the following sorting options:
 3. Quantity
 4. Price
 5. Return to Main Menu
-Selection: asdfa
+Selection: 1234
 
-ERROR: Invalid menu selection. Please enter a valid option.
+Error: Invalid menu selection
 
 Sort Menu:
 Please select one of the following sorting options:
@@ -640,7 +643,7 @@ Please select one of the following sorting options:
 3. Quantity
 4. Price
 5. Return to Main Menu
-Selection: asdfa
+Selection:
 
 
 *****Test Case #3: The data file is empty*****
@@ -720,41 +723,7 @@ Total Records: 6
 ------------------------------------------------------
 
 
-*****Test Case #6: Invalid Sort Menu Selection*****
-
-Sort Menu:
-Please select one of the following sorting options:
-1. ID
-2. Model
-3. Quantity
-4. Price
-5. Return to Main Menu
-Selection: asdf
-
-Error: Invalid menu selection
-
-Sort Menu:
-Please select one of the following sorting options:
-1. ID
-2. Model
-3. Quantity
-4. Price
-5. Return to Main Menu
-Selection: 1234
-
-Error: Invalid menu selection
-
-Sort Menu:
-Please select one of the following sorting options:
-1. ID
-2. Model
-3. Quantity
-4. Price
-5. Return to Main Menu
-Selection:
-
-
-*****Test Case #7: Only Invalid Records - Sort Menu*****
+*****Test Case #6: Only Invalid Records - Sort Menu*****
 Main Menu:
 Please select one of the following options:
 1. Valid Records
@@ -818,4 +787,18 @@ Please select one of the following options:
 3. Sort Inventory
 4. Quit program
 Selection:
+
+
+*****Test Case #7: *****
+
+
+
+
+
+
+
+
+
+
+
 */
